@@ -1,0 +1,1 @@
+find . /data/home/nano/project -name ".hpp" -or  -name ".hpp" -or -name ".cpp" -or -name "*.cc" -or -name "*.hh" -or -name "*.cpp" -or -name "*.h" -or -name "*.c" |etags --members --declarations -
