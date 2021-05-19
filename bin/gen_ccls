@@ -1,0 +1,28 @@
+if [ $# -eq 0 ];then
+  echo "usage:$0 "
+fi
+export PATH=/usr/local/python3/bin/:${PATH}
+blade_root=/data/home/liqingxin/blade-base
+cur_dir=`pwd`
+echo $cur_dir
+
+function gen_ccls() {
+    if [ -e "$cur_dir/.ccls" ];then
+        echo "$cur_dir/.ccls has exist"
+        exit
+    fi
+#%h -x
+#    %h c++-header
+#    ;;Example A
+#    clang
+#    %c -std=c11
+#    %cpp -std=c++2a
+#    %h %hpp --include=Global.h
+#    -Iinc
+#    -DMACRO
+
+        #examples B
+    #echo -en "%compile_commands.json\n%c -std=c11\n%cpp -std=c++14 \n%c %cpp -pthread \n%h %hpp \n%h -x \n%h c++-header  \n-I/data/home/liqingxin/blade-base" > $cur_dir/.ccls
+    cp /data/home/liqingxin/dev-config/.ccls ./
+}
+gen_ccls
