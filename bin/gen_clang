@@ -1,0 +1,6 @@
+#clang-format -style=google -dump-config > .clang-format
+#sed -i 's/ObjCBlockIndentWidth: 2/ObjCBlockIndentWidth: 4/g' .clang-format
+cp ~/dev-config/.clang-format ./.clang-format
+#cp ~/c++config/ccls-root    /data/home/liqingxin/blade-base/.ccls-root
+#cp ~/dev-config/.ccls    /data/home/liqingxin/blade-base/.ccls
+cp ~/dev-config/.ccls    .ccls
