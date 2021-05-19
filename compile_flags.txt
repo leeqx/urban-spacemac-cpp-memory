@@ -1,0 +1,4 @@
+-I/opt/rh/devtoolset-8/root/usr/lib/gcc/x86_64-redhat-linux/8/include
+-I/data/home/nano/blade-base/thirdparty
+-I/usr/local/include
+-I/usr/include
